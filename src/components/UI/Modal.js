@@ -3,6 +3,7 @@ import classes from "./Modal.module.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Fragment } from "react/cjs/react.production.min";
+// eslint-disable-next-line no-unused-vars
 import { createPortal } from "react-dom/cjs/react-dom.production.min";
 
 const Backdrop = (props) => {
@@ -30,7 +31,6 @@ const Modal = (props) => {
         <ModalOverlay>{props.children}</ModalOverlay>,
         portalElement
       )}
-      <ModalOverlay />
     </Fragment>
   );
 };
